@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, I am Jal Patel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="navbar">
+        <div class="logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>   
+
+<div class="banner" id="home">
+    <div class="app-text">
+        <h1><span>Hello,</span> I'm<br>Jal Patel</h1>
+    </div>
+</div>
+
+<div id="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi, I'm Jal, a sophomore Computer Science student at the University of Cincinnati. I am interested in software development with a focus on Artificial Intelligence and data. Currently, I'm learning more about developing web applications and using APIs and different frameworks and libraries to enhance applications. During my free time, I experiment with different ways of coding models to better tailor them for my personal projects.</p>
+            <h3>Languages I've been working with:</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+        <div class="about-image">
+            <img src="https://media.licdn.com/dms/image/D5603AQGQewJBrC0TAg/profile-displayphoto-shrink_800_800/0/1684303809487?e=2147483647&v=beta&t=-R60oHyqKUeZtOD93l8VId96Xxd6eEWqaXRwIv1DSHw" alt="Avatar">
+        </div>
+    </div>
+</div>
+
+
+<div id="projects"> <!-- Projects Section -->
+    <h2>Projects</h2>
+    <p>Over the last two years of college, I was able to work on a few projects, some personal and some for classes.</p>
+    
+    <div class="project-section">
+        <div class="project-card">
+            <h3>Class Projects</h3>
+            <div class="project-detail">
+                <h4>ENED</h4>
+                <p>The engineering 2 class project was to work in Python and make an autonomous robot that could navigate a warehouse, find boxes, identify the materials in them, and return them to the given return point. I learned more about Python, led the team to the goal, and learned to better communicate and manage the team's workload.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Personal Projects</h3>
+            <div class="project-detail">
+                <h4>Rock, Paper, Scissors</h4>
+                <p>Before polishing my skills with HTML, CSS, and JavaScript, I used whatever knowledge I had and made a simple game of Rock, Paper, Scissors. Player vs. Computer.</p>
+                <a href="https://patel4j5.github.io/Rock-Paper-Scissor/" target="_blank" class="iframe-link">
+                    <div class="iframe-container">
+                        <iframe src="https://patel4j5.github.io/Rock-Paper-Scissor/"></iframe>
+                    </div>
+                </a>
+            </div>
+            <div class="project-detail">
+                <h4>Website</h4>
+                <p>This website is my first personal project. Intended to showcase my skills in basic programming with HTML, CSS, and JavaScript. In addition to having a platform to share more about myself and my resume.</p>
+            </div>
+            <div class="project-detail">
+                <h4>Navigation Application</h4>
+                <p>Currently in progress, I am working on a navigation application that will be made in Python and will be accessing APIs to retrieve data. This application will show everything needed for a long road trip like gas, traffic, and weather in one application rather than multiple applications.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="contact"> <!-- Contact Section -->
+    <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through the following platforms:</p>
+        <div class="contact-icons">
+            <a href="mailto:Patel4j5@mail.uc.edu"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/jal-patel-73046823b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Patel4j5" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+// JavaScript for smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.hash).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>
